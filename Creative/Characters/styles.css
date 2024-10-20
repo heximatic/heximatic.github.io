@@ -1,0 +1,57 @@
+body {
+background-size: 100%;
+background-image: url(backgroundhome.jpg);
+font-family: 'Trebuchet MS', 'Garamond', Georgia, 'Times New Roman', serif;
+text-decoration: #000000;
+text-decoration: none;
+text-align: center;
+background-color: rgb(209, 177, 73);
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  text-size-adjust:unset;
+}
+a:hover {
+  color:#000000; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
+p,
+div {
+display: flex;
+list-style: none;
+}
+
+li.aa {
+background-image: url("backgound.png");
+max-width:500px;
+height:166px;
+object-fit:cover;
+display:inline-block;
+}
+
+img,
+a {
+display:block;
+max-width:100%;
+max-height:100%;
+}
+
+li {
+text-decoration: none;
+background-size:cover;
+max-width:100%;
+max-height:100%;
+background-image: url(backgroundposter.png);
+text-decoration: #000000;
+padding: .5em;
+margin: 2em;
+border-radius: 3px;
+}
+
+h2 {
+  display:contents;
+}

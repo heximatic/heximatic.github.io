@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>LOOT GENERATOR</h1>
+  <h2>MONEY</h2>
+  You got <p id="money1"></p> Pak(s)(1 unit)!
+  <br>
+  You got <p id="money2"></p> Puri(s)(5 unit)!
+  <br>
+  You got <p id="money3"></p> Panyu(s)(10 unit)!
+  <br>
+  You got <p id="money4"></p> Pioki(50 unit)!
+  <br>
+  <button onClick="window.location.href=window.location.href">REROLL ALL</button>
+  <script>
+    var randomWithProbability1_1 = () => {
+      var notRandomNumbers = [0, 1, 1, 2, 2, 3, 3, 4, 4, 5];
+      var idx = Math.floor(Math.random() * notRandomNumbers.length);
+      return notRandomNumbers[idx];
+    }
+    document.getElementById("money1").innerHTML = (randomWithProbability1_1())
+
+    var randomWithProbability1_2 = () => {
+      var notRandomNumbers = [1, 1, 1, 1, 2, 2, 2, 3, 3, 4];
+      var idx = Math.floor(Math.random() * notRandomNumbers.length);
+      return notRandomNumbers[idx];
+    }
+    document.getElementById("money2").innerHTML = (randomWithProbability1_2())
+
+    var randomWithProbability1_3 = () => {
+      var notRandomNumbers = [0, 0, 0, 1, 1, 1, 1, 2, 2, 3];
+      var idx = Math.floor(Math.random() * notRandomNumbers.length);
+      return notRandomNumbers[idx];
+    }
+    document.getElementById("money3").innerHTML = (randomWithProbability1_3())
+
+    var randomWithProbability1_4 = () => {
+      var notRandomNumbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1];
+      var idx = Math.floor(Math.random() * notRandomNumbers.length);
+      return notRandomNumbers[idx];
+    }
+    document.getElementById("money4").innerHTML = (randomWithProbability1_4())</script>
+  <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+  <h2>ITEMS</h2>
+  You got <p id="item1"></p> Low-Quality/Damaged Weapon(s)!
+  <br>
+  You got <p id="item2"></p> Regular Weapon(s)!
+  <br>
+  You got <p id="item3"></p> High-Quality Weapons(s)!
+  <br>
+  You got <p id="item4"></p> Epic Weapon!
+  <br>
+  <button onClick="window.location.href=window.location.href">REROLL ALL</button>
+  <script>
+    var randomWithProbability2_1 = () => {
+      var notRandomNumbers = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 3];
+      var idx = Math.floor(Math.random() * notRandomNumbers.length);
+      return notRandomNumbers[idx];
+    }
+    document.getElementById("item1").innerHTML = (randomWithProbability2_1())
+
+    var randomWithProbability2_2 = () => {
+      var notRandomNumbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2];
+      var idx = Math.floor(Math.random() * notRandomNumbers.length);
+      return notRandomNumbers[idx];
+    }
+    document.getElementById("item2").innerHTML = (randomWithProbability2_2())
+
+    var randomWithProbability2_3 = () => {
+      var notRandomNumbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2];
+      var idx = Math.floor(Math.random() * notRandomNumbers.length);
+      return notRandomNumbers[idx];
+    }
+    document.getElementById("item3").innerHTML = (randomWithProbability2_3())
+
+    var randomWithProbability2_4 = () => {
+      var notRandomNumbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1];
+      var idx = Math.floor(Math.random() * notRandomNumbers.length);
+      return notRandomNumbers[idx];
+    }
+    document.getElementById("item4").innerHTML = (randomWithProbability2_4())</script>
+  <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+  <h2>POTIONS</h2>
+  <details>
+    <summary>Not applicable to all dungeons (but click if so)</summary>
+    You got <p id="potion1"></p> Potion of Fire Resistance (10 minutes)!
+    <br>
+    You got <p id="potion2"></p> Potion of Cold Resistance (10 minutes)!
+    <br>
+    You got <p id="potion3"></p> Potion of Healing (+2 hp)!
+    <br>
+    You got <p id="potion4"></p> Potion of Healing (+5 hp)!
+    <br>
+    You got <p id="potion5"></p> Potion of Invisibility (10 minutes)!
+    <br>
+    You got <p id="potion6"></p> Potion of Water Breathing (10 minutes)!
+    <br>
+    You got <p id="potion7"></p> Potion of Poison/Weakness (10 minutes)!
+    <br>
+    <button onClick="window.location.href=window.location.href">REROLL ALL</button>
+    <script>
+      var randomWithProbability3_1 = () => {
+        var notRandomNumbers = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
+        var idx = Math.floor(Math.random() * notRandomNumbers.length);
+        return notRandomNumbers[idx];
+      }
+      document.getElementById("potion1").innerHTML = (randomWithProbability3_1())
+      document.getElementById("potion2").innerHTML = (randomWithProbability3_1())
+      document.getElementById("potion3").innerHTML = (randomWithProbability3_1())
+      document.getElementById("potion5").innerHTML = (randomWithProbability3_1())
+      document.getElementById("potion6").innerHTML = (randomWithProbability3_1())
+      document.getElementById("potion7").innerHTML = (randomWithProbability3_1())
+      
+      var randomWithProbability3_4 = () => {
+        var notRandomNumbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1];
+        var idx = Math.floor(Math.random() * notRandomNumbers.length);
+        return notRandomNumbers[idx];
+      }
+      document.getElementById("potion4").innerHTML = (randomWithProbability3_4())</script>
+  </details>
+  <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+  <h2>FOOD</h2>
+  <details>
+    <summary>Not applicable to all dungeons (but click if so)</summary>
+    You got <p id="food1"></p> Low-Quality Meal/Snack(s)(1 HP)!
+    <br>
+    You got <p id="food2"></p> Medium Quality Meal/Snack(s)(2 HP)!
+    <br>
+    You got <p id="food3"></p> Good Quality Meal(s)(3 HP)!
+    <br>
+    You got <p id="food4"></p> High Quality Meal (6 HP)!
+    <br>
+    You got <p id="food5"></p> Gourmet Meal (Max HP)!
+    <br>
+    <script>
+      var randomWithProbability4_1 = () => {
+        var notRandomNumbers = [0, 0, 1, 1, 1, 1, 1, 2, 2, 3];
+        var idx = Math.floor(Math.random() * notRandomNumbers.length);
+        return notRandomNumbers[idx];
+      }
+      document.getElementById("food1").innerHTML = (randomWithProbability4_1())
+      document.getElementById("food2").innerHTML = (randomWithProbability4_1())
+
+      var randomWithProbability4_3 = () => {
+        var notRandomNumbers = [0, 0, 0, 0, 1, 1, 1, 1, 2, 2];
+        var idx = Math.floor(Math.random() * notRandomNumbers.length);
+        return notRandomNumbers[idx];
+      }
+      document.getElementById("food3").innerHTML = (randomWithProbability4_3())
+
+      var randomWithProbability4_4 = () => {
+        var notRandomNumbers = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
+        var idx = Math.floor(Math.random() * notRandomNumbers.length);
+        return notRandomNumbers[idx];
+      }
+      document.getElementById("food4").innerHTML = (randomWithProbability4_4())
+
+      var randomWithProbability4_5 = () => {
+        var notRandomNumbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1];
+        var idx = Math.floor(Math.random() * notRandomNumbers.length);
+        return notRandomNumbers[idx];
+      }
+      document.getElementById("food5").innerHTML = (randomWithProbability4_5())</script>
+  </details>
+  <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+  <br>
+  <button onClick="window.location.href=window.location.href">REROLL ALL</button>
+  <button title="button title" class="action primary tocart"
+    onclick=" window.open('https://www.worldanvil.com/w/frist-regalrealm/a/currency-2B-itemshop-material', '_blank'); return false;">Currency
+    Value Table</button>
+  <button title="button title" class="action primary tocart"
+    onclick=" window.open('https://gist.github.com/heximatic/703ced671a6be40be61a5a94f5bfb40b', '_blank'); return false;">Code</button>
+  <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+</body>
+
+</html>
