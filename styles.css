@@ -1,6 +1,5 @@
 body {
   background: linear-gradient(to top, #00b500 0%, #000000 100%);
-  background-size: auto;
 }
 h1,
 ul {
@@ -8,7 +7,7 @@ ul {
   background-color: rgb(64, 255, 0, 0.286);
   padding: .5em;
   text-align: center;
-  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI', Courier;
   border-radius: 25px;
   color: white;
   width:auto;
@@ -64,4 +63,16 @@ a.button {
   background-color: rgb(64, 255, 0);
   text-decoration: none;
 }
-
+a {
+text-decoration: none;
+color:rgb(230, 138, 255);
+font-family: Courier;
+}
+p {
+color:rgb(230, 138, 255);
+font-family: Courier;
+}
+h1{
+color:rgb(255, 255, 255);
+font-family: Courier;
+}
