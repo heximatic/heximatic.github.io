@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(to top, #00b500 0%, #000000 100%);
+  background-size: auto;
 }
 h1,
 ul {
