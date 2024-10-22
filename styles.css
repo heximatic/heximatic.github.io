@@ -7,7 +7,7 @@ ul {
   background-color: rgb(64, 255, 0, 0.286);
   padding: .5em;
   text-align: center;
-  font-family: 'Segoe UI', Courier;
+  font-family: Courier;
   border-radius: 25px;
   color: white;
   width:auto;
@@ -24,7 +24,7 @@ div {
   animation-iteration-count: infinite;
   background-color: rgba(0, 0, 0, 0.638);
   padding: .5em;
-  font-family: Courier;
+  font-family: monospace;
   color: white;
   border-radius: 25px;
   display:flex;
@@ -32,13 +32,12 @@ div {
   height:auto;
 }
 ul.a{
-    border: 2px solid rgb(255, 234, 0);
-    background-color: rgb(255, 252, 176);
+    border: 2px solid rgb(2, 0, 70);
+    background-color: rgb(16, 0, 192);
     padding: .5em;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 25px;
     text-align: center;
-    font-family: monospace;
 }
 li {
   padding: .5em;
@@ -65,12 +64,11 @@ a.button {
 }
 a {
 text-decoration: none;
-color:rgb(30, 30, 30);
-font-family: Courier;
+color:rgb(210, 210, 210);
+font-family: monospace;
 }
 p {
 color:rgb(255, 255, 255);
-font-family: Courier;
 }
 h1{
 color:rgb(255, 255, 255);
