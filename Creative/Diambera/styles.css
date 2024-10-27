@@ -35,7 +35,7 @@ li {
   }
 
   div {
-  display:ruby;
+  display:flex;
   padding: .3em;
   }
 
