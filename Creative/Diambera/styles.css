@@ -1,49 +1,54 @@
 body {
-    background-image: url(backgroundhome.png);
-    background-size:cover;
-    font-family:'Courier New', Courier, monospace;
-    background-color: rgb(45, 45, 45);
-    color: #ffffff;
+  background-image: url(backgroundhome.png);
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(45, 45, 45);
+  color: #ffffff;
 
 }
+
 h1,
 ul {
-    padding: .5em;
-    text-align: center;
-    font-family:Courier, monospace;
+  padding: .5em;
+  text-align: center;
+  font-family: Courier, monospace;
 }
 
 li {
-    display:block;
-    border: 1px outset;
-    border-color: rgb(27, 27, 27);
-    background-color: rgba(39, 39, 39, 0.72);
-    text-decoration: none;
-    padding: .4em;
-    text-align: center;
-  }
+  display: block;
+  border: 1px outset;
+  border-color: rgb(27, 27, 27);
+  background-color: rgba(39, 39, 39, 0.72);
+  text-decoration: none;
+  padding: .4em;
+  text-align: center;
+}
 
-  p {
+p {
   display: inline;
-  background-color:rgba(0, 0, 0, 0.69);
-  }
+  background-color: rgba(0, 0, 0, 0.69);
+}
 
-  a {
-    color: #ffffff;
-    text-decoration: none;
-    text-size-adjust:unset;
-  }
+a {
+  color: #ffffff;
+  text-decoration: none;
+  text-size-adjust: unset;
+}
 
-  div {
-  display:flex;
+div {
+  display: flex;
   padding: .3em;
-  }
+}
 
 button {
   border-color: rgb(27, 27, 27);
   background-color: rgba(39, 39, 39, 0.72);
   color: #ffffff;
   padding: .4em;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
+}
+
+p.text {
+  text-indent: 5%;
 }
