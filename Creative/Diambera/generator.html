@@ -5,6 +5,7 @@
 </head>
 
 <body>
+<li>
   <h1>LOOT GENERATOR</h1>
   <h2>MONEY</h2>
   You got <p id="money1"></p> Pak(s)(1 unit)!
@@ -15,6 +16,7 @@
   <br>
   You got <p id="money4"></p> Pioki(50 unit)!
   <br>
+</li>
   <button onClick="window.location.href=window.location.href">REROLL ALL</button>
   <script>
     var randomWithProbability1_1 = () => {
@@ -45,6 +47,7 @@
     }
     document.getElementById("money4").innerHTML = (randomWithProbability1_4())</script>
   <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+  <li>
   <h2>ITEMS</h2>
   You got <p id="item1"></p> Low-Quality/Damaged Weapon(s)!
   <br>
@@ -54,6 +57,7 @@
   <br>
   You got <p id="item4"></p> Epic Weapon!
   <br>
+  </li>
   <button onClick="window.location.href=window.location.href">REROLL ALL</button>
   <script>
     var randomWithProbability2_1 = () => {
@@ -84,6 +88,7 @@
     }
     document.getElementById("item4").innerHTML = (randomWithProbability2_4())</script>
   <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+  <li>
   <h2>POTIONS</h2>
   <details>
     <summary>Not applicable to all dungeons (but click if so)</summary>
@@ -101,6 +106,7 @@
     <br>
     You got <p id="potion7"></p> Potion of Poison/Weakness (10 minutes)!
     <br>
+  </li>
     <button onClick="window.location.href=window.location.href">REROLL ALL</button>
     <script>
       var randomWithProbability3_1 = () => {
@@ -123,6 +129,7 @@
       document.getElementById("potion4").innerHTML = (randomWithProbability3_4())</script>
   </details>
   <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+  <li>
   <h2>FOOD</h2>
   <details>
     <summary>Not applicable to all dungeons (but click if so)</summary>
@@ -135,7 +142,7 @@
     You got <p id="food4"></p> High Quality Meal (6 HP)!
     <br>
     You got <p id="food5"></p> Gourmet Meal (Max HP)!
-    <br>
+  </li>
     <script>
       var randomWithProbability4_1 = () => {
         var notRandomNumbers = [0, 0, 1, 1, 1, 1, 1, 2, 2, 3];
@@ -171,9 +178,8 @@
   <button onClick="window.location.href=window.location.href">REROLL ALL</button>
   <button title="button title" class="action primary tocart"
     onclick=" window.open('https://www.worldanvil.com/w/frist-regalrealm/a/currency-2B-itemshop-material', '_blank'); return false;">Currency
-    Value Table</button>
-  <button title="button title" class="action primary tocart"
-    onclick=" window.open('https://gist.github.com/heximatic/703ced671a6be40be61a5a94f5bfb40b', '_blank'); return false;">Code</button>
+    Value Table (for me)</button>
+    <a href="generator.html" download>Download Code</a>
   <br><br>
     <a href="https://kbworld.site">
       <img src="https://kbworld.site/Creative/Characters/Tyler/presentationera1/home.png">
