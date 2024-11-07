@@ -39,6 +39,8 @@ display:inline-flex;
 }
 </style>
 </head>
+
+
 <body>
 <details>
 <summary><p style="color: rgb(216, 216, 216);">Set name</p></summary>
@@ -48,49 +50,31 @@ display:inline-flex;
 <hr>
 
 <li>
-<button onclick="calculator1()" ondblclick="nameSet()">
+<button onclick="number()" ondblclick="nameSet()">
 <p id="user"></p>,
 <p>you have </p> <p id="result"></p><p> coin(s).</p>
 </button>
-<button onclick="calculator2()" ondblclick="nameSet1()">
+<button onclick="number1()" ondblclick="nameSet1()">
 <p id="user1"></p>,
 <p>you have</p> <p id="result1"></p><p> coin(s).</p>
 </button>
-<button onclick="calculator3()" ondblclick="nameSet2()">
+<button onclick="number2()" ondblclick="nameSet2()">
 <p id="user2"></p>,
 <p>you have </p> <p id="result2"></p><p> coin(s).</p>
 </button>
-<button onclick="calculator4()" ondblclick="nameSet3()">
+<button onclick="number3()" ondblclick="nameSet3()">
 <p id="user3"></p>,
 <p>you have </p> <p id="result3"></p><p> coin(s).</p>
 </button>
-<button onclick="calculator5()" ondblclick="nameSet4()">
+<button onclick="number4()" ondblclick="nameSet4()">
 <p id="user4"></p>,
 <p>you have </p> <p id="result4"></p><p> coin(s).</p>
 </button>
-<button onclick="calculator6()" ondblclick="nameSet5()">
+<button onclick="number5()" ondblclick="nameSet5()">
 <p id="user5"></p>,
 <p>you have </p> <p id="result5"></p><p> coin(s).</p>
 </button>
 </li>
-
-<ul>
-<br>
-<button onclick="coinone()" type="button">+1</button>
-<button onclick="coinfive()" type="button">+5</button>
-<button onclick="cointen()" type="button">+10</button>
-<button onclick="coinfifty()" type="button">+50</button>
-<button onclick="coinhundred()" type="button">+100</button>
-<br>
-<button onclick="coinneg()" type="button">-1</button>
-<button onclick="coinnegfive()" type="button">-5</button>
-<button onclick="coinnegten()" type="button">-10</button>
-<button onclick="coinnegfifty()" type="button">-50</button>
-<button onclick="coinneghundred()" type="button">-100</button>
-<br>
-<button onclick="reset()" type="button">RESET!</button>
-</ul>
-
 
 <script>
 onload=document.getElementById("user").innerHTML = localStorage.name
@@ -132,6 +116,116 @@ onload=document.getElementById("user5").innerHTML = localStorage.name5
   }
 </script>
 
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+<ul>
+<br>
+<button onclick="coinone()" type="button">+1</button>
+<button onclick="coinfive()" type="button">+5</button>
+<button onclick="cointen()" type="button">+10</button>
+<button onclick="coinfifty()" type="button">+50</button>
+<button onclick="coinhundred()" type="button">+100</button>
+<br>
+<button onclick="coinneg()" type="button">-1</button>
+<button onclick="coinnegfive()" type="button">-5</button>
+<button onclick="coinnegten()" type="button">-10</button>
+<button onclick="coinnegfifty()" type="button">-50</button>
+<button onclick="coinneghundred()" type="button">-100</button>
+<br>
+<button onclick="reset()" type="button">RESET!</button>
+</ul>
+
+<script>
+
+const numb = 0;
+
+function number() {
+localStorage.num = Number(localStorage.num) + Number(numb);
+document.getElementById("result").innerHTML = localStorage.num0;
+}
+
+function number1() {
+localStorage.num1 = localStorage.num1 + Number(numb);
+document.getElementById("result1").innerHTML = localStorage.num1;
+}
+
+function number2() {
+x2 = x2 + numb
+document.getElementById("result").innerHTML = x
+}
+
+function number3() {
+x3 = x3 + numb
+document.getElementById("result").innerHTML = x
+}
+
+function number4() {
+x4 = x4 + numb
+document.getElementById("result").innerHTML = x
+}
+
+function number5() {
+x5 = x5 + numb
+document.getElementById("result").innerHTML = x
+}
+
+
+//add one
+function coinone() {
+numb + 1;
+document.getElementById("result0").innerHTML = numb
+}
+//add five
+function coinfive() {
+numb + 5;
+}
+//add ten
+function cointen() {
+numb + 10;
+}
+//add fifty
+function coinfifty() {
+numb + 50;
+}
+//add a hundeeed
+function coinhundred() {
+numb + 100;
+}
+//subtract one
+function coinneg() {
+numb - 1;
+}
+//subtract 5
+function coinnegfive() {
+numb - 5;
+}
+//subtract ten
+function coinnegten() {
+numb - 10;
+}
+//subtract fifty
+function coinnegfifty() {
+numb - 50;
+}
+//subtract hunnid
+function coinneghundred() {
+numb - 100;
+}
+//reset
+function reset() {
+Number(localstorage.num) = 0;
+Number(localstorage.num1) = 0;
+localstorage.num2 = 0;
+localstorage.num3 = 0;
+localstorage.num4 = 0;
+localstorage.num5 = 0;
+}
+
+</script>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 <ul>
 <details>
 <summary><p>Rolls if ya need em'</p></summary>
@@ -145,95 +239,6 @@ onload=document.getElementById("user5").innerHTML = localStorage.name5
 </ul>
 
 <script>
-
-onload=localStorage.num0
-onload=localStorage.num1
-onload=localStorage.num2
-onload=localStorage.num3
-onload=localStorage.num4
-onload=localStorage.num5
-
-//add one
-function coinone() {
-Number(v) + 1;
-document.getElementById("result").innerHTML = v
-}
-//add five
-function coinfive() {
-Number(v) + 5;
-document.getElementById("result").innerHTML = v
-}
-//add ten
-function cointen() {
-Number(v) + 10;
-document.getElementById("result").innerHTML = v
-}
-//add fifty
-function coinfifty() {
-Number(v) + 50;
-document.getElementById("result").innerHTML = v
-}
-//add a hundeeed
-function coinhundred() {
-Number(v) + 100;
-document.getElementById("result").innerHTML = v
-}
-//subtract one
-function coinneg() {
-Number(v) - 1;
-document.getElementById("result").innerHTML = v
-}
-//subtract 5
-function coinnegfive() {
-Number(v) - 5;
-document.getElementById("result").innerHTML = v
-}
-//subtract ten
-function coinnegten() {
-Number(v) - 10;
-document.getElementById("result").innerHTML = v
-}
-//subtract fifty
-function coinnegfifty() {
-Number(v) - 50;
-document.getElementById("result").innerHTML = v
-}
-//subtract hunnid
-function coinneghundred() {
-Number(v) - 100;
-document.getElementById("result").innerHTML = v
-}
-//reset
-function reset() {
-v = 0
-document.getElementById("result").innerHTML = v
-}
-
-const v1 = localStorage.num0;
-const v2 = localStorage.num1;
-const v3 = localStorage.num2;
-const v4 = localStorage.num3;
-const v5 = localStorage.num4;
-const v6 = localStorage.num5;
-
-function calculator1() {
-v1 = v1 + v;
-document.getElementById("result0").innerHTML = localStorage.num0
-}
-function calculator2() {
-v2 = v2 + v;
-document.getElementById("result1").innerHTML = localstorage.num1
-}
-function calculator3() {
-v3 = v3 + v;
-document.getElementById("result2").innerHTML = localstorage.num2
-}
-document.getElementById("result3").innerHTML = localstorage.num3
-document.getElementById("result4").innerHTML = localstorage.num4
-document.getElementById("result5").innerHTML = localstorage.num5
-
-//////////////////////////////////////////////////
-
 function r1() {
   var ranNum = [1, 2, 3, 4, 5, 6];
       var idx = Math.floor(Math.random() * ranNum.length);

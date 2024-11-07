@@ -1,0 +1,80 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+color: rgb(5, 0, 43);
+background-color: cornflowerblue;
+font-family: 'Comic Sans MS', 'Courier New', Courier, monospace;
+}
+p {
+display: inline;
+font-size: x-large;
+}
+button {
+font-size: x-large;
+text-align: center;
+padding: .9em;
+border-radius: 3px;
+margin: 3px;
+margin-left: auto;
+margin-right: auto;
+}
+</style>
+</head>
+<body>
+<details>
+<summary style="font-size: x-large;">Explanation</summary>
+<h1>Any time there is a complaint about something fairly trivial (something that
+    can easily be solved or has little to no effect on general experience), 
+    a tally is added. However, if a compliment or a nice remark is made, a 
+    tally is removed.</h1>
+<h3>Indeed, I do recognize the hypocrisy in making a complaint in something relatively
+    trivial, but, as my mother has put it, the build-up of those sorts of feelings generally
+    leads to a negative or stressful 'vibe'. This is primarily a negative-reinforcement exersize.</h3>
+<h3>Additionally, as to be fair, I have also included my own buttons.</h3>
+</details>
+
+<div>
+<p>Ren has complained <p><p id="result1"></p><p> time(s) today.</p>
+<button onclick="add1()" type="button">+1</button>
+<button onclick="sub1()" type="button">-1</button>
+<button onclick="reset1()" type="button">reset</button>
+</div>
+<script>
+onload=document.getElementById("result1").innerHTML = localStorage.comp
+function add1() {
+    localStorage.comp = Number(localStorage.comp) + 1;
+    document.getElementById("result1").innerHTML = localStorage.comp
+    }
+function sub1() {
+    localStorage.comp = Number(localStorage.comp) - 1;
+    document.getElementById("result1").innerHTML = localStorage.comp
+    }
+    function reset1() {
+    localStorage.comp = 0;
+    document.getElementById("result1").innerHTML = localStorage.comp
+    }
+</script>
+
+<div>
+<p>Kaleb has complained <p><p id="result2"></p><p> time(s) today.</p>
+<button onclick="add2()" type="button">+1</button>
+<button onclick="sub2()" type="button">-1</button>
+<button onclick="reset2()" type="button">reset</button>
+</div>
+<script>
+onload=document.getElementById("result2").innerHTML = localStorage.comp1
+function add2() {
+    localStorage.comp1 = Number(localStorage.comp1) + 1;
+    document.getElementById("result2").innerHTML = localStorage.comp1
+    }
+function sub2() {
+    localStorage.comp1 = Number(localStorage.comp1) - 1;
+    document.getElementById("result2").innerHTML = localStorage.comp1
+    }
+    function reset2() {
+    localStorage.comp1 = 0;
+    document.getElementById("result2").innerHTML = localStorage.comp1
+    }
+</script>
+</body>
