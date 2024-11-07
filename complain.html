@@ -22,6 +22,7 @@ margin-right: auto;
 </style>
 </head>
 <body>
+<div>
 <details>
 <summary style="font-size: x-large;">Explanation</summary>
 <h1>Any time there is a complaint about something fairly trivial (something that
@@ -33,12 +34,14 @@ margin-right: auto;
     leads to a negative or stressful 'vibe'. This is primarily a negative-reinforcement exersize.</h3>
 <h3>Additionally, as to be fair, I have also included my own buttons.</h3>
 </details>
-
+</div>
 <div>
 <p>Ren has complained <p><p id="result1"></p><p> time(s) today.</p>
+<div>
 <button onclick="add1()" type="button">+1</button>
 <button onclick="sub1()" type="button">-1</button>
 <button onclick="reset1()" type="button">reset</button>
+</div>
 </div>
 <script>
 onload=document.getElementById("result1").innerHTML = localStorage.comp
@@ -58,9 +61,11 @@ function sub1() {
 
 <div>
 <p>Kaleb has complained <p><p id="result2"></p><p> time(s) today.</p>
+<div>
 <button onclick="add2()" type="button">+1</button>
 <button onclick="sub2()" type="button">-1</button>
 <button onclick="reset2()" type="button">reset</button>
+</div>
 </div>
 <script>
 onload=document.getElementById("result2").innerHTML = localStorage.comp1
