@@ -40,6 +40,7 @@ button {
   padding: .4em;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  padding: 1em;
 }
 
 p.text {

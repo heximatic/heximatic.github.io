@@ -1,0 +1,6 @@
+{
+    "price":{"1":"$", "2":"$$", "3":"$$$"},
+    "type":{"tk":"takeout", "dn":"dine-in", "hm":"home-made"},
+    "style":{"sw":"sandwich", "bowl":"bowl", "plate":"plate"},
+    "flavor":{"US":"American", "Mex":"Mexican", "Med":"Mediterranian"}
+}
