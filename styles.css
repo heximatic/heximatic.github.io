@@ -2,13 +2,12 @@
 body {
   background: linear-gradient(to top, #00b500 0%, #000000 100%);
 }
-h1,
-ul {
+h1, ul {
   border: 2px solid rgb(64, 255, 0);
   background-color: rgb(64, 255, 0, 0.286);
   padding: .5em;
   text-align: center;
-  font-family: Courier;
+  font-family: monospace;
   border-radius: 25px;
   color: white;
   width:auto;
@@ -66,13 +65,9 @@ a.button {
 }
 a {
 text-decoration: none;
-color:rgb(210, 210, 210);
+color:rgb(155, 155, 155);
 font-family: monospace;
 }
 p {
 color:rgb(255, 255, 255);
-}
-h1{
-color:rgb(255, 255, 255);
-font-family: Courier;
 }
